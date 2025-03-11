@@ -1,4 +1,4 @@
-package juridica;
+package heranca_juridica;
 
 public class MainJuridica {
     public static void main(String[] args) {

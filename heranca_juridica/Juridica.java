@@ -1,4 +1,4 @@
-package juridica;
+package heranca_juridica;
 
 public class Juridica extends Pessoa{
     private String cnpj;

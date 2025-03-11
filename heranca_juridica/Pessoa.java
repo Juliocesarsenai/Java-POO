@@ -1,4 +1,4 @@
-package juridica;
+package heranca_juridica;
 
 public abstract class Pessoa {
     protected String nome;

@@ -1,4 +1,4 @@
-package funcionario;
+package heranca_funcionario;
 
 public class Endereco {
     private String logradouro;

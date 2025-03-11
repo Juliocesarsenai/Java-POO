@@ -1,4 +1,4 @@
-package funcionario;
+package heranca_funcionario;
 
 public class Medico extends Funcionario{
     private String crm;

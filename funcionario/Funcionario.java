@@ -1,49 +1,41 @@
 package funcionario;
 
-
 public abstract class Funcionario {
-    private String nome;
-    private String email;
-    private double salario;
-    private Endereco endereco;
+    protected String nome;
+    protected String dataNascimento;
+    protected Sexo sexo;
+    protected Setor setor;
+    protected double salarioBase;
 
-    public Funcionario(String nome, String email, double salario, Endereco endereco) {
+    public Funcionario(String nome, String dataNascimento, Sexo sexo, Setor setor, double salarioBase) {
         this.nome = nome;
-        this.email = email;
-        this.salario = salario;
-        this.endereco = endereco;
+        this.dataNascimento = dataNascimento;
+        this.sexo = sexo;
+        this.setor = setor;
+        this.salarioBase = salarioBase;
     }
 
     public String getNome() {
         return nome;
     }
 
-    public String getEmail() {
-        return email;
+    public String getDataNascimento() {
+        return dataNascimento;
     }
 
-    public double getSalario() {
-        return salario;
-    }
-    public Endereco getEndereco() {
-        return endereco;
+    public Sexo getSexo() {
+        return sexo;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-    public void setEmail(String email) {
-        this.email = email;
+    public Setor getSetor() {
+        return setor;
     }
 
-    public void setSalario(double salario) {
-        this.salario = salario;
-    }
-    public void setEndereco(Endereco endereco) {
-        this.endereco = endereco;
+    public double getSalarioBase() {
+        return salarioBase;
     }
 
-    public String toString() {
-        return "Nome: " + nome + "\nEmail: " + email + "\nSalário: " + salario + "\nEndereço: " + endereco;
+    public double getSalarioFinal(){
+        return salarioBase;
     }
 }

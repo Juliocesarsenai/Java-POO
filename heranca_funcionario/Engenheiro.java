@@ -1,4 +1,4 @@
-package funcionario;
+package heranca_funcionario;
 
 public class Engenheiro extends Funcionario{
     private String crea;
